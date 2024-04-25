@@ -9,7 +9,14 @@ import BankLinking from "./components/BankLinking";
 import AccountDetails from "./components/AccountDetails";
 import Login from "./components/Login";
 import "./i18n";
-import { Dispatch, SetStateAction, createContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useEffect,
+  useState,
+} from "react";
+import i18n from "./i18n";
 
 interface AppContextProps {
   firstName: string;
@@ -27,6 +34,14 @@ function App() {
   const [variant, setVariant] = useState("base");
 
   const onLoginPage = location.includes("login");
+
+  // change i18n language when our language toggle changes
+  useEffect(
+    function changeLanguage() {
+      i18n.changeLanguage(variant);
+    },
+    [variant]
+  );
 
   return (
     <>

@@ -1,4 +1,4 @@
-import variables from "./variables.json";
+import variables from "../src/ditto/variables.json";
 
 export function dittoVariableLink(key: keyof typeof variables) {
   const variable = (variables as any)[key];

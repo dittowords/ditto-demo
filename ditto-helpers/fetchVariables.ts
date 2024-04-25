@@ -1,10 +1,12 @@
 import fs from "fs/promises";
 import yaml from "js-yaml";
 
+const DITTO_DIR = `../src/ditto`;
+
 async function main() {
   const fileContents = await fs.readFile(
     `${process.env.HOME}/.config/ditto`,
-    "utf8",
+    "utf8"
   );
   const yamlData = yaml.load(fileContents);
   const data = (yamlData as any)["api.dittowords.com"][0];
@@ -17,13 +19,13 @@ async function main() {
 
   const response = await fetch(
     "https://api.dittowords.com/v1/variables?includeSampleData=true",
-    options,
+    options
   );
   const variables = await response.json();
 
   await fs.writeFile(
-    "./ditto/variables.json",
-    JSON.stringify(variables, null, 2),
+    `${DITTO_DIR}/variables.json`,
+    JSON.stringify(variables, null, 2)
   );
 }
 

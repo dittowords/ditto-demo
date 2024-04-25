@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
-import { dittoVariableLink } from "../ditto/helpers";
+import { dittoVariableLink } from "../../ditto-helpers/helpers";
 
 function AccountDetails() {
   const [, setLocation] = useLocation();

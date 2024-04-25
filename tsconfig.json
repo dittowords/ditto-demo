@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "ditto-helpers/helpers.ts", "ditto-helpers/fetchVariables.ts"],
+  "include": ["src", "ditto-helpers/fetchVariables.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

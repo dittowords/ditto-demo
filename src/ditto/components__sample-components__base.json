@@ -46,14 +46,14 @@
   "onboarding.phone-number-verification.didnt-receive-sample": "Didn’t receive it?",
   "onboarding.phone-number-verification.header-sample": "Please enter the verification code",
   "onboarding.phone-number-verification.hint-text-sample": "We sent it to {{userPhoneNumberSample}}. It’ll expire in {{verificationCodeExpirationSample}} minutes.",
-  "onboarding.phone-number-verification.hint-text-sample_other": "We sent it to {{userPhoneNumber}}. It’ll expire in {{verificationCodeExpiration}} minutes.",
-  "onboarding.phone-number-verification.hint-text-sample_one": "We sent it to {{userPhoneNumber}}. It’ll expire in {{verificationCodeExpiration}} minute.",
+  "onboarding.phone-number-verification.hint-text-sample_other": "We sent it to {{userPhoneNumberSample}}. It’ll expire in {{verificationCodeExpirationSample}} minutes.",
+  "onboarding.phone-number-verification.hint-text-sample_one": "We sent it to {{userPhoneNumberSample}}. It’ll expire in {{verificationCodeExpirationSample}} minute.",
   "onboarding.phone-number-verification.resend-sample": "Resend code",
   "onboarding.phone-number.disclosure-sample": "By providing your phone number, you consent to receiving a verification text message. Standard text messaging rates may apply based on your mobile carrier. Your number will be kept confidential and won't be used for any other purposes without your explicit consent.",
   "onboarding.phone-number.h2-sample": "We’ll confirm it by sending a text.",
   "onboarding.profile.header-sample": "Tell us about you",
   "onboarding.profile.id-disclaimer-sample": "Please enter your info exactly as it appears on your ID. We may need to ask you for ID verification later.",
   "onboarding.sign-up.cta-sample": "Sign Up",
-  "onboarding.sign-up.disclaimer-sample": "By signing up, you agree to our <1>Terms and Conditions</1>",
+  "onboarding.sign-up.disclaimer-sample": "By signing up, you agree to our {{termsAndConditionsLinkSample}}",
   "onboarding.sign-up.login-message-sample": "Already have an account?"
 }
